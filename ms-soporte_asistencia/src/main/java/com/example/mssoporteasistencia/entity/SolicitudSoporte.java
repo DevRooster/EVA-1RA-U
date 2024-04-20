@@ -20,9 +20,9 @@ public class SolicitudSoporte {
     private String prioridad;
     private LocalDate fecha_creación ;
 
-    @JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
-    @OneToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "incidente_id")
-    private List<Incidente> detalle;
+    @JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
+    private Incidente incidente;
 
 }

@@ -18,11 +18,11 @@ public class Incidente {
     private String estado;
     private LocalDate fecha_creación;
 
-
-
-
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "historialsoporte_id")
     @JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
-    @OneToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
-    @JoinColumn(name = "solicitud_soporte_id")
-    private List<SolicitudSoporte> detalle;
+    private HistorialSoporte historialSoporte;
+
+
+
 }
