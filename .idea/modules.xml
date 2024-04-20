@@ -3,9 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/DAD-2024-1-G2.iml" filepath="$PROJECT_DIR$/.idea/DAD-2024-1-G2.iml" />
-      <module fileurl="file://$PROJECT_DIR$/ms-config-server/ms-config-server.iml" filepath="$PROJECT_DIR$/ms-config-server/ms-config-server.iml" />
-      <module fileurl="file://$PROJECT_DIR$/ms-gateway-server/ms-gateway-server.iml" filepath="$PROJECT_DIR$/ms-gateway-server/ms-gateway-server.iml" />
-      <module fileurl="file://$PROJECT_DIR$/ms-registry-server/ms-registry-server.iml" filepath="$PROJECT_DIR$/ms-registry-server/ms-registry-server.iml" />
     </modules>
   </component>
 </project>

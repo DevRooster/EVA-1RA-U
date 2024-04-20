@@ -1,6 +1,6 @@
 spring:
   application:
-    name: ms-soporteasistencia-service
+    name: ms-soportea_sistencia-service
   profiles:
     active: development
   config:

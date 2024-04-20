@@ -15,16 +15,16 @@ spring:
         locator:
           enable: true
       routes:
-        - id: ms-catalogo-service
-          uri: lb://ms-catalogo-service
+        - id: ms-integracion_instituciones-service
+          uri: lb://ms-integracion_instituciones-service
           predicates:
-            - Path=/categoria/**, /producto/**
-        - id: ms-cliente-service
-          uri: lb://ms-cliente-service
+            - Path=/ConvenioAcuerdo/**, /DatosCompartidos/**, /InstitucionExterna/**, /OtraUGEL/**
+        - id: ms-monitoreo_asistencia-service
+          uri: lb://ms-monitoreo_asistencia
           predicates:
-            - Path=/cliente/**
-        - id: ms-pedido-service
-          uri: lb://ms-pedido-service
+            - Path=/Clase/**, /Estudiante/**, /RegistroAsistencia/**
+        - id: ms-soporte_asistencia-service
+          uri: lb://ms-soporte_asistencia-service
           predicates:
-            - Path=/pedido/**, /pedidodetalle/**
+            - Path=/HistorialSoporte/**, /Incidente/**, /SolicitudSoporte/**
 
