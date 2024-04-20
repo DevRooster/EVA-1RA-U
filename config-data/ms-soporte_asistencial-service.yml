@@ -13,7 +13,7 @@ spring:
     show-sql: true
   datasource:
     driverClassName: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/ms-soporte_asistencia
+    url: jdbc:mysql://localhost:3306/ms-soporte_asistencial
     username: root
     password:
 eureka:
