@@ -1,32 +1,31 @@
-package com.example.msinstitucion_externa.entity;
+package com.example.msmonitoreo_asistencia.entity;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import jakarta.persistence.*;
 import lombok.Data;
 
+import java.time.LocalDate;
 import java.util.List;
 
 @Entity
 @Data
-public class OtraUGEL {
+public class RegistroAsistencia {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
-    private String nombre;
-    private String tipo;
-    private String direccion;
-    private String telefono;
-    private String correo_electronico ;
-
-
-    @JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
-    @OneToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
-    @JoinColumn(name = "otraugel_id")
-    private List<ConvenioAcuerdo> detalle;
+    private Integer estudiante_id;
+    private Integer clase_id;
+    private String estado_asistencia;
+    private LocalDate fecha_asistencia;
+    private String observaciones  ;
 
     @JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
     @OneToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
-    @JoinColumn(name = "otraugel_id")
-    private List<DatosCompartidos> detalleDatosCompartidos;
+    @JoinColumn(name = "clase_id")
+    private List<Clase> detalle;
 
+    @JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
+    @OneToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+    @JoinColumn(name = "clase_id")
+    private List<Estudiante> detalleEstudiantes;
 }
