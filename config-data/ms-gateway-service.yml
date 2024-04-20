@@ -28,5 +28,8 @@ spring:
           predicates:
             - Path=/HistorialSoporte/**, /Incidente/**, /SolicitudSoporte/**
 
-
+        - id: ms-gestion_infraestructura-service
+          uri: lb://ms-gestion_infraestructura-service
+          predicates:
+            - Path=/Aula/**, /Edificio/**, /Equipo/** , /Mantenimiento/**
 
