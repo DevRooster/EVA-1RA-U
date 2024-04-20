@@ -7,13 +7,15 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="ms-config-server" />
-        <module name="ms-personal-administrativo" />
         <module name="ms-gateway-server" />
-        <module name="ms-eventos_actividades" />
         <module name="ms-registry-server" />
-        <module name="ms-matriculas" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="ms-eventos_actividades" target="17" />
+      <module name="ms-matriculas" target="17" />
+      <module name="ms-personal-administrativo" target="17" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
