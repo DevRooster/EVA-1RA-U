@@ -9,7 +9,7 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/EnriqueMV18/MS-CICLOV.git # ruta del repositorio git
+          uri: https://github.com/EnriqueMV18/EVA-1RA-U.git # ruta del repositorio git
           searchPaths: config-data
           #username:
           #password:
