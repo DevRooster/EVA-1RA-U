@@ -10,10 +10,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.example</groupId>
-	<artifactId>ms-institucion_externa</artifactId>
+	<artifactId>ms-integracion_instituciones</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>ms-institucion_externa</name>
-	<description>ms-institucion_externa</description>
+	<name>ms-integracion_instituciones</name>
+	<description>ms-integracion_instituciones</description>
 	<properties>
 		<java.version>17</java.version>
 		<spring-cloud.version>2022.0.2</spring-cloud.version>

@@ -18,7 +18,7 @@ public class MsInstitucionExternaApplication {
 		return new OpenAPI().info (new Info()
 				.title("OPEN API MICROSERVICIO INTEGRACION CON OTRAS INSTITUCIONES")
 				.version("0.0.1")
-				.description("servicio web institucion_externa")
+				.description("servicio web integracion_instituciones")
 				.termsOfService("http://swagger.io/terms")
 				.license (new License().name("Apache 2.0").url("http://springdoc.org"))
 		);
