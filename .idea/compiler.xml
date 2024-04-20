@@ -7,14 +7,17 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="ms-config-server" />
-        <module name="ms-gateway-server" />
         <module name="ms-registry-server" />
+        <module name="ms-gateway-server" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="ms-config-server" target="17" />
       <module name="ms-eventos_actividades" target="17" />
+      <module name="ms-gateway-server" target="17" />
       <module name="ms-matriculas" target="17" />
       <module name="ms-personal-administrativo" target="17" />
+      <module name="ms-registry-server" target="17" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">

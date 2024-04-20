@@ -1,15 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
-        <option value="$PROJECT_DIR$/ms-matriculas/pom.xml" />
         <option value="$PROJECT_DIR$/ms-config-server/pom.xml" />
-        <option value="$PROJECT_DIR$/ms-gateway-server/pom.xml" />
-        <option value="$PROJECT_DIR$/ms-registry-server/pom.xml" />
-        <option value="$PROJECT_DIR$/ms-eventos_actividades/pom.xml" />
-        <option value="$PROJECT_DIR$/ms-Personal-Administrativo/pom.xml" />
       </list>
     </option>
   </component>
