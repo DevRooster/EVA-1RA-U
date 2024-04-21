@@ -19,8 +19,8 @@ spring:
           uri: lb://ms-integracion_instituciones-service
           predicates:
             - Path=/ConvenioAcuerdo/**, /DatosCompartidos/**, /InstitucionExterna/**, /OtraUGEL/**
-        - id: ms-monitoreo_asistencia-service
-          uri: lb://ms-monitoreo_asistencia-service
+        - id: ms-monitoreoasistencia-service
+          uri: lb://ms-monitoreoasistencia-service
           predicates:
             - Path=/clase/**, /estudiante/**, /registro_asistencia/**
         - id: ms-soporteasistencial-service
