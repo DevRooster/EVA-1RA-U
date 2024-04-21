@@ -26,7 +26,7 @@ spring:
         - id: ms-soporteasistencial-service
           uri: lb://ms-soporteasistencial-service
           predicates:
-            - Path=/historialsoporte/**, /incidente/**, /solicitud/**
+            - Path=/historialsoporte/**, /incidente/**, /solicitud_soporte/**
 
         - id: ms-gestion_infraestructura-service
           uri: lb://ms-gestion_infraestructura-service

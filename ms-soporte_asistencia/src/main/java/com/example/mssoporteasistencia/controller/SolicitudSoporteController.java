@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 @RestController
-@RequestMapping("/solicitudSoporte")
+@RequestMapping("/solicitud_soporte")
 public class SolicitudSoporteController {
     @Autowired
     private SolicitudSoporteService solicitudSoporteService;
