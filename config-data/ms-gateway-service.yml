@@ -29,18 +29,18 @@ spring:
             - Path=/historialsoporte/**, /incidente/**, /solicitud_soporte/**
 
 
-        - id: ms-gestion_infraestructura-service
-          uri: lb://ms-gestion_infraestructura-service
+        - id: ms-gestioninfraestructura-service
+          uri: lb://ms-gestioninfraestructura-service
           predicates:
             - Path=/aula/**, /edificio/**, /equipo/** , /mantenimiento/**
 
-        - id: ms-gestion_financiera-service
-          uri: lb://ms-gestion_financiera-service
+        - id: ms-gestionfinanciera-service
+          uri: lb://ms-gestionfinanciera-service
           predicates:
             - Path=/cuenta/**, /egreso/**, /ingreso/** , /transaccion/**
 
-        - id: ms-comunicaciones_alertas-service
-          uri: lb://ms-comunicaciones_alertas-service
+        - id: ms-comunicacionesAlertas-service
+          uri: lb://ms-comunicacionesAlertas-service
           predicates:
             - Path=/alerta/**, /grupo/**, /mensaje/** , /miembro_grupo/**
 

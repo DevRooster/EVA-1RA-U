@@ -1,5 +1,5 @@
 server:
-  port: 8087
+  port: 8086
 springdoc:
   api-docs:
     enabled: true
@@ -13,7 +13,7 @@ spring:
     show-sql: true
   datasource:
     driverClassName: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/ms-comunicaciones_alertas
+    url: jdbc:mysql://localhost:3306/ms-gestionfinanciera
     username: root
     password:
 eureka:

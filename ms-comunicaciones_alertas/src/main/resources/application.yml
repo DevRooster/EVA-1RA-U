@@ -1,6 +1,6 @@
 spring:
   application:
-    name: ms-comunicaciones_alertas-service
+    name: ms-comunicacionesAlertas-service
   profiles:
     active: development
   config:

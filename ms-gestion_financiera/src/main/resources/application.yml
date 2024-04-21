@@ -1,6 +1,6 @@
 spring:
   application:
-    name: ms-gestion_financiera-service
+    name: ms-gestionfinanciera-service
   profiles:
     active: development
   config:
