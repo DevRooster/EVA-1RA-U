@@ -20,9 +20,9 @@ spring:
           predicates:
             - Path=/ConvenioAcuerdo/**, /DatosCompartidos/**, /InstitucionExterna/**, /OtraUGEL/**
         - id: ms-monitoreo_asistencia-service
-          uri: lb://ms-monitoreo_asistencia
+          uri: lb://ms-monitoreo_asistencia-service
           predicates:
-            - Path=/Clase/**, /Estudiante/**, /RegistroAsistencia/**
+            - Path=/clase/**, /estudiante/**, /registro_asistencia/**
         - id: ms-soporteasistencial-service
           uri: lb://ms-soporteasistencial-service
           predicates:

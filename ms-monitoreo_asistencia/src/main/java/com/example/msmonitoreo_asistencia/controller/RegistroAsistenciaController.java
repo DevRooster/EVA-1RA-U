@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 @RestController
-@RequestMapping("/RegistroAsistencia")
+@RequestMapping("/registro_asistencia")
 public class RegistroAsistenciaController {
     @Autowired
     private RegistroAsistenciaService registroAsistenciaService;
