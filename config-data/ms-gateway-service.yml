@@ -23,10 +23,10 @@ spring:
           uri: lb://ms-monitoreo_asistencia
           predicates:
             - Path=/Clase/**, /Estudiante/**, /RegistroAsistencia/**
-        - id: ms-soporte_asistencia-service
-          uri: lb://ms-soporte_asistencia-service
+        - id: ms-soporte_asistencial-service
+          uri: lb://ms-soporte_asistencial-service
           predicates:
-            - Path=/HistorialSoporte/**, /Incidente/**, /SolicitudSoporte/**
+            - Path=/historialsoporte/**, /Incidente/**, /SolicitudSoporte/**
 
         - id: ms-gestion_infraestructura-service
           uri: lb://ms-gestion_infraestructura-service
