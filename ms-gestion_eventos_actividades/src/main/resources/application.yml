@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: ms-gestion_eventos_actividades-service
+  profiles:
+    active: development
+  config:
+    import: optional:configserver:http://root:123456@localhost:7070
+

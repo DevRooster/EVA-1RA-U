@@ -11,8 +11,8 @@ public class ConvenioAcuerdo {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
-    private String institucion_id;
-    private String ugel_id;
+    private Integer institucion_id;
+    private Integer ugel_id;
     private LocalDate fecha_inicio;
     private LocalDate fecha_fin;
     private String descripcion;
