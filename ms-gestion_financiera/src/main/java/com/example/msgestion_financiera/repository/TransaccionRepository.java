@@ -1,4 +1,7 @@
 package com.example.msgestion_financiera.repository;
 
-public interface TransaccionRepository {
+import com.example.msgestion_financiera.entity.Transaccion;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface TransaccionRepository extends JpaRepository <Transaccion,Integer> {
 }

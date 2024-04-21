@@ -33,3 +33,8 @@ spring:
           predicates:
             - Path=/Aula/**, /Edificio/**, /Equipo/** , /Mantenimiento/**
 
+        - id: ms-gestion_financiera-service
+          uri: lb://ms-gestion_financiera-service
+          predicates:
+            - Path=/Cuenta/**, /Egreso/**, /Ingreso/** , /Transaccion/**
+
