@@ -43,4 +43,17 @@ spring:
           predicates:
             - Path=/alerta/**, /grupo/**, /mensaje/** , /miembro_grupo/**
 
+        - id: ms-gestion_docentes-service
+          uri: lb://ms-gestion_docentes-service
+          predicates:
+            - Path=/Asignatura/**, /Docente/**, /Evaluación/**
 
+        - id: ms-gestion_eventos_actividades-service
+          uri: lb://ms-gestion_eventos_actividades-service
+          predicates:
+            - Path=/Actividad/**, /Evento/**, /Participante/**, /RecursoNecesario/**
+
+        - id: ms-planificacion_curricular-service
+          uri: lb://ms-planificacion_curricular-service
+          predicates:
+            - Path=/ContenidoCurricular/**, /Curso/**, /DocenteCurso/**, /EstudianteCurso/**, /PlanEstudios/**
