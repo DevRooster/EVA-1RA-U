@@ -21,10 +21,10 @@ public class Participante {
 
 
     @ManyToMany(fetch = FetchType.LAZY, mappedBy = "participantes")
-    @JsonIgnoreProperties({"participantes"})
+    @JsonIgnoreProperties({"participantes_id"})
     private Set<Actividad> actividades = new HashSet<>();
 
     @ManyToMany(fetch = FetchType.LAZY, mappedBy = "participantes")
-    @JsonIgnoreProperties({"participantes"})
+    @JsonIgnoreProperties({"participantes_id"})
     private Set<Evento> eventos = new HashSet<>();
 }
