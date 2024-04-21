@@ -31,6 +31,5 @@ public class Curso {
     private List<ContenidoCurricular> detalleContenidocurricular;
 
     @OneToMany(mappedBy = "curso", cascade = CascadeType.ALL)
-    @JsonIgnoreProperties({"curso"})
     private Set<DocenteCurso> docentes = new HashSet<>();
 }

@@ -20,7 +20,6 @@ public class DocenteCurso {
     private String observaciones  ;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "curso_id")
-    @JsonIgnoreProperties({"docentes"})
+    @JoinColumn(name = "curso_id") // Asegúrate de que este sea el nombre correcto de la columna en tu base de datos
     private Curso curso;
 }
