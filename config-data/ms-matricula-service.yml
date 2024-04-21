@@ -15,7 +15,7 @@ spring:
     driverClassName: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/msmatricula
     username: root
-    password: sasha
+    password: 
 
 eureka:
   client:
