@@ -49,10 +49,10 @@ spring:
           predicates:
             - Path=/asignatura/**, /docente/**, /evaluación/**
 
-        - id: ms-gestion_eventos_actividades-service
-          uri: lb://ms-gestion_eventos_actividades-service
+        - id: ms-gestioneventosactividades-service
+          uri: lb://ms-gestioneventosactividades-service
           predicates:
-            - Path=/Actividad/**, /Evento/**, /Participante/**, /RecursoNecesario/**
+            - Path=/actividad_evento/**, /evento/**, /participante/**, /recurso_necesarios/**
 
         - id: ms-planificacioncurricular-service
           uri: lb://ms-planificacioncurricular-service

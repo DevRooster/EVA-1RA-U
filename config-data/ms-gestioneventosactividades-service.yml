@@ -13,7 +13,7 @@ spring:
     show-sql: true
   datasource:
     driverClassName: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/ms-gestion_eventos_actividades
+    url: jdbc:mysql://localhost:3306/ms-gestioneventosactividades
     username: root
     password:
 eureka:

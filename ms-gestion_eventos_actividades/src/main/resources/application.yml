@@ -1,6 +1,6 @@
 spring:
   application:
-    name: ms-gestion_eventos_actividades-service
+    name: ms-gestioneventosactividades-service
   profiles:
     active: development
   config:

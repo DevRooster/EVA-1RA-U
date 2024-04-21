@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/Actividad")
+@RequestMapping("/actividad_evento")
 public class ActividadController {
     @Autowired
     private ActividadService actividadService;

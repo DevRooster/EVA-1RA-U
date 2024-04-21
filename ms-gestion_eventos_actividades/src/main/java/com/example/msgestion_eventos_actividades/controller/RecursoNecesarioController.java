@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 @RestController
-@RequestMapping("/RecursoNecesarios")
+@RequestMapping("/recurso_necesarios")
 public class RecursoNecesarioController {
     @Autowired
     private RecursoNecesarioService recursoNecesarioService;
