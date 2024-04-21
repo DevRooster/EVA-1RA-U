@@ -31,10 +31,16 @@ spring:
         - id: ms-gestion_infraestructura-service
           uri: lb://ms-gestion_infraestructura-service
           predicates:
-            - Path=/Aula/**, /Edificio/**, /Equipo/** , /Mantenimiento/**
+            - Path=/aula/**, /edificio/**, /equipo/** , /mantenimiento/**
 
         - id: ms-gestion_financiera-service
           uri: lb://ms-gestion_financiera-service
           predicates:
-            - Path=/Cuenta/**, /Egreso/**, /Ingreso/** , /Transaccion/**
+            - Path=/cuenta/**, /egreso/**, /ingreso/** , /transaccion/**
+
+        - id: ms-comunicaciones_alertas-service
+          uri: lb://ms-comunicaciones_alertas-service
+          predicates:
+            - Path=/alerta/**, /grupo/**, /mensaje/** , /miembro_grupo/**
+
 
