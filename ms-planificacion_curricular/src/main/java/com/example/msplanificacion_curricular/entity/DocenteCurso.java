@@ -13,8 +13,8 @@ public class DocenteCurso {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
-    private Integer docente_id;
-    private Integer curso_id;
+    private Integer id_docente;
+    private Integer id_curso;
     private String Año_Academico;
     private LocalDate Periodo_Academico;
     private String observaciones  ;
