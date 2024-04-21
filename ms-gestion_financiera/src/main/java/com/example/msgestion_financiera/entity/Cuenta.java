@@ -17,8 +17,8 @@ public class Cuenta {
 
     private Integer id;
     private String nombre;
-    private Number numero;
-    private Number saldo;
+    private Integer numero;
+    private Integer saldo;
     private LocalDate fecha_apertura;
 
 
