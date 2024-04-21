@@ -13,7 +13,7 @@ spring:
     show-sql: true
   datasource:
     driverClassName: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/ms-integracion_instituciones
+    url: jdbc:mysql://localhost:3306/ms-integracioninstituciones
     username: root
     password:
 eureka:
