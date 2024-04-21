@@ -1,6 +1,6 @@
 spring:
   application:
-    name: ms-planificacion_curricular-service
+    name: ms-planificacioncurricular-service
   profiles:
     active: development
   config:

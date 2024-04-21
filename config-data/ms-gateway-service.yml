@@ -15,10 +15,10 @@ spring:
         locator:
           enable: true
       routes:
-        - id: ms-integracion_instituciones-service
-          uri: lb://ms-integracion_instituciones-service
+        - id: ms-integracioninstituciones-service
+          uri: lb://ms-integracioninstituciones-service
           predicates:
-            - Path=/ConvenioAcuerdo/**, /DatosCompartidos/**, /InstitucionExterna/**, /OtraUGEL/**
+            - Path=/convenio_acuerdo/**, /datos_compartidos/**, /institucion_externa/**, /otra_ugel/**
         - id: ms-monitoreoasistencia-service
           uri: lb://ms-monitoreoasistencia-service
           predicates:
@@ -44,21 +44,18 @@ spring:
           predicates:
             - Path=/alerta/**, /grupo/**, /mensaje/** , /miembro_grupo/**
 
-        - id: ms-gestion_docentes-service
-          uri: lb://ms-gestion_docentes-service
+        - id: ms-gestiondocentes-service
+          uri: lb://ms-gestiondocentes-service
           predicates:
-            - Path=/Asignatura/**, /Docente/**, /Evaluación/**
+            - Path=/asignatura/**, /docente/**, /evaluación/**
 
         - id: ms-gestion_eventos_actividades-service
           uri: lb://ms-gestion_eventos_actividades-service
           predicates:
             - Path=/Actividad/**, /Evento/**, /Participante/**, /RecursoNecesario/**
 
-        - id: ms-planificacion_curricular-service
-          uri: lb://ms-planificacion_curricular-service
+        - id: ms-planificacioncurricular-service
+          uri: lb://ms-planificacioncurricular-service
           predicates:
-            - Path=/ContenidoCurricular/**, /Curso/**, /DocenteCurso/**, /EstudianteCurso/**, /PlanEstudios/**
-        - id: ms-pedido-service
-          uri: lb://ms-pedido-service
-          predicates:
-            - Path=/pedido/**, /pedidodetalle/**
+            - Path=/contenido_curricular/**, /curso/**, /docente_curso/**, /estudiante_curso/**, /plan_estudios/**
+

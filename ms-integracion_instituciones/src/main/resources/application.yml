@@ -1,6 +1,6 @@
 spring:
   application:
-    name: ms-integracion_instituciones-service
+    name: ms-integracioninstituciones-service
   profiles:
     active: development
   config:
