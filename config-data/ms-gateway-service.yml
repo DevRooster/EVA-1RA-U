@@ -57,3 +57,4 @@ spring:
           uri: lb://ms-planificacion_curricular-service
           predicates:
             - Path=/ContenidoCurricular/**, /Curso/**, /DocenteCurso/**, /EstudianteCurso/**, /PlanEstudios/**
+
