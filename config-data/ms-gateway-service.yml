@@ -44,3 +44,4 @@ spring:
             - Path=/alerta/**, /grupo/**, /mensaje/** , /miembro_grupo/**
 
 
+
