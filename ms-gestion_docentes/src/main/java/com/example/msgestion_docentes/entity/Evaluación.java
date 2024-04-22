@@ -14,13 +14,21 @@ public class Evaluación {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
-    private Integer id_docente;
-    private Integer id_asignatura;
+    private Integer Docente_id;
+    private Integer asigatura_id;
     private String Tipo;
     private LocalDate fecha_creación;
     private String Nota;
 
+    @JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
+    @OneToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+    @JoinColumn(name = "Docente_id")
+    private List<Docente> Detalle_Docente;
 
+    @JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
+    @OneToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+    @JoinColumn(name = "asigatura_id")
+    private List<Asignatura> Detalle_Asignatura;
 
 
 }

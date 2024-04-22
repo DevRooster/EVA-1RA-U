@@ -1,5 +1,7 @@
 package com.example.msmonitoreo_asistencia.entity;
 
+import com.example.msmonitoreo_asistencia.dto.DocenteDto;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import jakarta.persistence.*;
 import lombok.Data;
 
@@ -16,6 +18,10 @@ public class Clase {
     private String nivel;
     private String grado;
     private String horario;
-    private Integer docente_id;
+    private Integer docenteDtoId;
+
+    @Transient
+    private DocenteDto docenteDto ;
+
 
 }
