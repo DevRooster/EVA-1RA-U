@@ -58,10 +58,7 @@ spring:
           uri: lb://ms-planificacioncurricular-service
           predicates:
             - Path=/contenido_curricular/**, /curso/**, /docente_curso/**, /estudiante_curso/**, /plan_estudios/**
-	    - id: ms-matricula-service
-          uri: lb://ms-matricula-service
-          predicates:
-            - Path=/matricula/**, /expediente/**, /estudiante/**, /curso/**
+
         - id: ms-capacitacion-service
           uri: lb://ms-capacitacion-service
           predicates:
@@ -71,4 +68,12 @@ spring:
           predicates:
             - Path=/destinatario/**, /mensaje/**, /notificacion/**
 
+        - id: ms-matricula-service
+          uri: lb://ms-matricula-service
+          predicates:
+            - Path=/matricula/**, /expediente/**, /estudiante/**, /curso/**
 
+
+
+
+       
