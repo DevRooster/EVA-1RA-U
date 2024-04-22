@@ -1,6 +1,6 @@
 spring:
   application:
-    name: ms-gestioninfraestructura-service
+    name: ms-capacitacion-service
   profiles:
     active: development
   config:

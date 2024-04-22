@@ -1,5 +1,5 @@
 server:
-  port: 8085
+  port: 2003
 springdoc:
   api-docs:
     enabled: true
@@ -13,9 +13,10 @@ spring:
     show-sql: true
   datasource:
     driverClassName: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/ms-gestion_infraestructura
+    url: jdbc:mysql://localhost:3306/mscapacitacion
     username: root
-    password:
+    password: 
+
 eureka:
   client:
     serviceUrl:
