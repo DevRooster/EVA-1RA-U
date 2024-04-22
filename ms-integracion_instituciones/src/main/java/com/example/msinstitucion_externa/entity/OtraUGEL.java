@@ -13,20 +13,8 @@ public class OtraUGEL {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     private String nombre;
-    private String tipo;
+    private String responsable;
     private String direccion;
     private String telefono;
-    private String correo_electronico ;
-
-
-    @JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
-    @OneToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
-    @JoinColumn(name = "otraugel_id")
-    private List<ConvenioAcuerdo> detalle;
-
-    @JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
-    @OneToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
-    @JoinColumn(name = "otraugel_id")
-    private List<DatosCompartidos> detalleDatosCompartidos;
-
+    private String correo_electronico;
 }

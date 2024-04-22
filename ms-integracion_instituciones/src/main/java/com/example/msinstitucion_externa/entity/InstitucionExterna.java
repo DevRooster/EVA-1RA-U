@@ -12,14 +12,16 @@ public class InstitucionExterna {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
-    private String nombre ;
-    private String tipo ;
-    private String direccion  ;
+    private String nombre;
+    private String Tipo_Institución;
+    private String direccion ;
     private String telefono ;
-    private String correo_electronico  ;
+    private String correo_electronico;
+
+
 
     @JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
     @OneToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
-    @JoinColumn(name = "otraugel_id")
-    private List<OtraUGEL> otraUGELS;
+    @JoinColumn(name = "convenio_id")
+    private List<ConvenioAcuerdo> Detalle_Convenio_acuerdo;
 }

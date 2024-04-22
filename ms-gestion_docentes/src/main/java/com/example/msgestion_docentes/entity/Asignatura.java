@@ -17,10 +17,7 @@ public class Asignatura {
     private String Descripción;
 
 
-    @JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
-    @OneToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
-    @JoinColumn(name = "evaluacion_id")
-    private List<Asignatura> detalle;
+
 
 
 

@@ -26,10 +26,12 @@ public class Docente {
     private String Estado;
 
 
+
+
+
     @JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
     @OneToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     @JoinColumn(name = "evaluacion_id")
-    private List<Evaluación> detalle;
-
+    private List<Evaluación> detalle_evaluacion;
 
 }

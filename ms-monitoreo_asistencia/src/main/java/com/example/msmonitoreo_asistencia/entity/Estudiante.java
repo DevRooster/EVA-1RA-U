@@ -1,14 +1,10 @@
 package com.example.msmonitoreo_asistencia.entity;
 
-import com.example.msmonitoreo_asistencia.dto.AsignaturaDto;
-import com.example.msmonitoreo_asistencia.dto.DocenteDto;
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.example.msmonitoreo_asistencia.dto.OtrasUgelDto;
 import jakarta.persistence.*;
 import lombok.Data;
 
-import java.math.BigDecimal;
 import java.time.LocalDate;
-import java.util.List;
 
 @Entity
 @Data
@@ -22,8 +18,8 @@ public class Estudiante {
     private String grado ;
     private LocalDate fecha_nacimiento ;
     private String dirección ;
-    private Integer asignaturaId;
+    private Integer otrasUgelId;
     @Transient
-    private AsignaturaDto asignaturaDto ;
+    private OtrasUgelDto otrasUgelDto ;
 
 }
