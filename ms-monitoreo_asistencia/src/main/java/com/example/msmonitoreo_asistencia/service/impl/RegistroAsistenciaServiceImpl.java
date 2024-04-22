@@ -1,7 +1,9 @@
 package com.example.msmonitoreo_asistencia.service.impl;
 
 
+import com.example.msmonitoreo_asistencia.dto.DocenteDto;
 import com.example.msmonitoreo_asistencia.entity.RegistroAsistencia;
+
 import com.example.msmonitoreo_asistencia.repository.RegistroAsistenciaRepository;
 import com.example.msmonitoreo_asistencia.service.RegistroAsistenciaService;
 
@@ -27,8 +29,7 @@ public class RegistroAsistenciaServiceImpl implements RegistroAsistenciaService 
     }
 
     @Override
-    public Optional<RegistroAsistencia> buscarPorId(Integer id) {
-        return registroAsistenciaRepository.findById(id);
+    public Optional<RegistroAsistencia> buscarPorId(Integer id) { return registroAsistenciaRepository.findById(id);
     }
 
     @Override

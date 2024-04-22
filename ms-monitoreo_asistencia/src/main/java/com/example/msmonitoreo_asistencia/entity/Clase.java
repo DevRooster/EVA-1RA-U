@@ -1,9 +1,6 @@
 package com.example.msmonitoreo_asistencia.entity;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import lombok.Data;
 
 import java.math.BigDecimal;
@@ -20,7 +17,5 @@ public class Clase {
     private String grado;
     private String horario;
     private Integer docente_id;
-
-
 
 }

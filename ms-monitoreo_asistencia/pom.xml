@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.example</groupId>
-	<artifactId>ms-monitoreo_asistencia</artifactId>
+	<artifactId>ms-monitoreo_asistencial</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>ms-monitoreo_asistencia</name>
-	<description>ms-monitoreo_asistencia</description>
+	<name>ms-monitoreo_asistencial</name>
+	<description>ms-monitoreo_asistencial</description>
 	<properties>
 		<java.version>17</java.version>
 		<spring-cloud.version>2022.0.2</spring-cloud.version>
