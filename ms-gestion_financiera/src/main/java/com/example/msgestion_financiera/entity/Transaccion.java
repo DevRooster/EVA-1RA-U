@@ -24,6 +24,6 @@ public class Transaccion {
 
     @JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
     @OneToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
-    @JoinColumn(name = "cuenta_origen_id")
+    @JoinColumn(name = "cuenta_destino_id")
     private List<Cuenta> detalle;
 }

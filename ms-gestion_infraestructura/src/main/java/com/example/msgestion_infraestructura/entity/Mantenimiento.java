@@ -19,6 +19,7 @@ public class Mantenimiento {
     private LocalDate fecha_fin;
     private Integer equipo_id;
 
+/* relacion de muchos a uno */
     @JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
     @OneToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     @JoinColumn(name = "equipo_id")

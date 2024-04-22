@@ -17,13 +17,6 @@ public class Alerta {
 
     private Integer id;
     private String tipo;
-    /* public enum tipo {
-        emergencia,
-        informativa,
-        recordatorio,
-        etc
-    }
-     */
     private String contenido;
     private LocalDate fecha;
 }
