@@ -13,16 +13,16 @@ public class SolicitudSoporte {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
-
+    private Integer incidente_id;
     private String título ;
     private String descripción ;
     private String estado ;
     private String prioridad;
     private LocalDate fecha_creación ;
 
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "incidente_id")
     @JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
-    private Incidente incidente;
+    @OneToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+    @JoinColumn(name = "incidente_id")
+    private List<Incidente> Detalle_Incidentes ;
 
 }

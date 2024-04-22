@@ -14,14 +14,15 @@ public class Incidente {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     private Integer solicitud_soporte_id;
+
     private String descripción;
     private String estado;
     private LocalDate fecha_creación;
 
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "historialsoporte_id")
     @JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
-    private HistorialSoporte historialSoporte;
+    @OneToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+    @JoinColumn(name = "solicitud_soporte_id")
+    private List<SolicitudSoporte> Detalle_SolicitudSoporte;
 
 
 
