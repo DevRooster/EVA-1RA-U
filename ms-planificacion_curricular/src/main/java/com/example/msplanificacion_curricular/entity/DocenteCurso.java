@@ -14,12 +14,11 @@ public class DocenteCurso {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     private Integer id_docente;
-    private Integer id_curso;
+    private Integer curso_id;
     private String Año_Academico;
     private LocalDate Periodo_Academico;
     private String observaciones  ;
 
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "curso_id") // Asegúrate de que este sea el nombre correcto de la columna en tu base de datos
-    private Curso curso;
+
+
 }

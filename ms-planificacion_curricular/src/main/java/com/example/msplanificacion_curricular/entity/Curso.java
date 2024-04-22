@@ -20,16 +20,4 @@ public class Curso {
     private String Nivel_Educativo;
 
 
-
-    @ManyToMany(fetch = FetchType.LAZY, mappedBy = "cursos")
-    @JsonIgnoreProperties({"cursos"})
-    private Set<EstudianteCurso> estudiantes = new HashSet<>();
-
-    @JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
-    @OneToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
-    @JoinColumn(name = "contenidocurricular_id")
-    private List<ContenidoCurricular> detalleContenidocurricular;
-
-    @OneToMany(mappedBy = "curso", cascade = CascadeType.ALL)
-    private Set<DocenteCurso> docentes = new HashSet<>();
 }

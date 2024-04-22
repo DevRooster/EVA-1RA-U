@@ -5,6 +5,7 @@ import jakarta.persistence.*;
 import lombok.Data;
 
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 @Entity
@@ -17,15 +18,12 @@ public class EstudianteCurso {
     private Integer curso_id ;
     private String Año_Academico ;
     private String Periodo_Academico ;
-    @ManyToMany(fetch = FetchType.LAZY)
-    @JoinTable(
-            name = "curso_estudiantecurso",
-            joinColumns = @JoinColumn(name = "estudiantecurso_id"),
-            inverseJoinColumns = @JoinColumn(name = "curso_id")
-    )
-    @JsonIgnoreProperties({"estudiantes"})
-    private Set<Curso> cursos = new HashSet<>();
 
+
+    @JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
+    @OneToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+    @JoinColumn(name = "curso_id")
+    private List<Curso> Detalle_Curso;
 
 
 }

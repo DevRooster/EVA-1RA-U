@@ -21,4 +21,14 @@ public class ContenidoCurricular {
     private String Recursos_Didacticos;
 
 
+    @JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
+    @OneToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+    @JoinColumn(name = "curso_id")
+    private List<Curso> Detalle_Curso;
+
+
+    @JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
+    @OneToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+    @JoinColumn(name = "Plan_Estudios_id")
+    private List<PlanEstudios> Detalle_Plan_Estudios;
 }
